@@ -21,8 +21,8 @@
     <script>
         $(function() {
             var canvas = $('#canvas')[0];
-            canvas.width = $(window).width()-20;
-            canvas.height = $(window).height()-20;
+            canvas.width = $(window).width();
+            canvas.height = $(window).height();
             var ctx = canvas.getContext('2d');
 
             // init
@@ -57,7 +57,7 @@
                 listFire.push(fire);
             }
 
-            function randColor() {
+            function randColor() {5
                 var r = Math.floor(Math.random() * 256);
                 var g = Math.floor(Math.random() * 256);
                 var b = Math.floor(Math.random() * 256);
